@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "balloon balloon"
+            "special angry"
+            "special photo"
+            "special signup"
+            "thing signup";
+        grid-template-rows: 100px 150px 150px 170px 180px;
+        background-image: ;
+    }
+
+    .balloon {
+        background-color: red;
+        grid-area: balloon;
+    }
+
+    .special {
+        grid-area: special;
+        background-color: aqua;
+    }
+
+    .angry {
+        grid-area: angry;
+        background-color: green;
+    }
+
+    .photo {
+        grid-area: photo;
+        background-color: blue;
+    }
+
+    .signup {
+        grid-area: signup;
+        background-color: brown;
+    }
+
+    .thing {
+        grid-area: thing;
+        background-color: blueviolet;
+    }
+</style>
+
+<body>
+    <!-- grid area -->
+    <div class="container">
+        <div class="balloon">
+            <h1>We like balloons</h1>
+            <p>You can find all kinds</p>
+        </div>
+        <div class="special">
+            <h1>Special shapes</h1>
+            <p>Why are some of them so scary</p>
+        </div>
+        <div class="angry">
+            <h1>Angry people at</h1>
+            <p>Hot air balloons. A bit weather sensitve</p>
+        </div>
+        <div class="photo">
+            <h1>Balloon photo</h1>
+            <p>I hate quite a few</p>
+        </div>
+        <div class="thing">
+            <h1>10 things you discover when taking a balloon ride</h1>
+            <p>Number 8 will AMAZE you</p>
+        </div>
+        <div class="signup">
+            <p>Sign up for more in4 about balloons.</p>
+            <input type="text" placeholder="Sign me up">
+        </div>
+    </div>
+</body>
+
+</html>
